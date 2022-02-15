@@ -7,7 +7,7 @@ draft: false
 
 ########################### about service #############################
 about:
-  enable : true
+  enable : false
   title : "Creative UX/UI Design Agency"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate soluta corporis odit, optio
           cum! Accusantium numquam ab, natus excepturi architecto earum ipsa aliquam, illum, omnis rerum, eveniet
@@ -22,7 +22,7 @@ about:
 
 ########################## featured service ############################
 featured_service:
-  enable : true
+  enable : false
   service_item:
     # featured service item loop
     - name : "Interface Design"
@@ -46,9 +46,8 @@ featured_service:
 ############################# Service ###############################
 service:
   enable : true
-  title : "Our Services"
-  description : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the
-          blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
+  #title : "Our Services"
+  description : "We build your dream home through the following process"
   service_item:
     # service item loop
     - icon : fas fa-bullseye #https://fontawesome.com/v5.15/icons
@@ -68,26 +67,6 @@ service:
     # service item loop
     - icon : fas fa-bug #https://fontawesome.com/v5.15/icons
       name: Start Up
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-    # service item loop
-    - icon : fas fa-headphones-alt #https://fontawesome.com/v5.15/icons
-      name: Logo Design
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-    # service item loop
-    - icon : fas fa-leaf #https://fontawesome.com/v5.15/icons
-      name: Development
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-    # service item loop
-    - icon : fas fa-globe-asia #https://fontawesome.com/v5.15/icons
-      name: Brand Identity
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-    # service item loop
-    - icon : fas fa-feather #https://fontawesome.com/v5.15/icons
-      name: Brand Identity
       content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
 
 ############################# call to action #################################

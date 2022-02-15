@@ -6,13 +6,14 @@
   <div class="container">
     {{ with site.Params.contact.form }}{{ if .enable -}}
     <div class="row">
-      <form method="POST" {{ if .use_netlify }}name="{{ printf "contact_%s" $.Language.Lang }}" action="{{ "/message_sent" | relLangURL }}" netlify netlify-honeypot="nhp"{{ else }}name="contact" action="{{ .action | safeURL }}"{{ end }}>
+      <form method="POST" {{ if .use_netlify }}name="{{ printf "contact_%s" $.Language.Lang }}" action="{{ i18n "contact_form_action" }}" netlify netlify-honeypot="nhp"{{ else }}name="contact" action="{{ i18n "contact_form_action" }}"{{ end }}>
         <div class="col-md-6 col-sm-12">
           <div class="block">
             <div class="form-group">
               <label for="name" hidden>{{ i18n "contact_form_name" }}</label>
               <input id="name" name="name" type="text" class="form-control" placeholder="{{ i18n "contact_form_name" }}" required>
             </div>
+            <input type="hidden" name="_next" value="http://localhost:1313/airspace/message_sent/">
             <div class="form-group">
               <label for="email" hidden>{{ i18n "contact_form_email" }}</label>
               <input id="email" name="email" type="email" autocomplete="email" class="form-control" placeholder="{{ i18n "contact_form_email" }}" required>
@@ -26,11 +27,11 @@
               <input name="nhp" type="text" class="form-control" placeholder="Are you made of flesh and bone?">
             </div>
             {{- end }}
-            {{ if .use_recaptcha -}}
+            <!-- {{ if .use_recaptcha -}}
             <div class="form-group-h">
               <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
             </div>
-            {{- end }}
+            {{- end }} -->
           </div>
         </div>
         <div class="col-md-6 col-sm-12">

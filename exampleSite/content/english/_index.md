@@ -5,7 +5,7 @@ banner:
   bg_image: "images/pexels-binyamin-mellish-186077.jpg"
   bg_overlay: true
   title: "IZ Homes"
-  content: "We love the Web and the work we do.We work closely with our clients to deliver  the best possible solutions for their needs"
+  content: "DELIVERING THE DREAM OF HOME OWNERSHIP"
   button:
     enable: true
     label: "Discover Our Project"
@@ -15,7 +15,7 @@ banner:
 about:
   enable: true
   title: "About Us"
-  description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
+  description: "Established in 2012, IZ Homes is a family-owned business and a niche builder for residential homes."
   content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id."
   image: "images/wrapper-img.png"
 
@@ -55,32 +55,6 @@ cta:
     enable: true
     label: "Tell Us Your Story"
     link: "contact"
-
-############################# Funfacts ###############################
-funfacts:
-  enable: true
-  title: "Fun Facts About Us"
-  description: "'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics'"
-  funfact_item:
-  # funfacts item loop
-  - icon: "fas fa-mug-hot" #https://fontawesome.com/v5.15/icons
-    name: "Cups Of Coffee"
-    count: "99"
-
-  # funfacts item loop
-  - icon: "fas fa-glasses" #https://fontawesome.com/v5.15/icons
-    name: "Article Written"
-    count: "45"
-
-  # funfacts item loop
-  - icon: "fas fa-keyboard" #https://fontawesome.com/v5.15/icons
-    name: "Projects Completed"
-    count: "125"
-
-  # funfacts item loop
-  - icon: "fas fa-clock" #https://fontawesome.com/v5.15/icons
-    name: "Combined Projects"
-    count: "200"
 
   testimonial_slider:
   # testimonial item loop

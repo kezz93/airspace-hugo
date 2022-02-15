@@ -8,7 +8,7 @@ draft: false
 
 ################################## About #####################################
 about:
-  enable : true
+  enable : false
   image : "images/company/about.jpg"
   title : "We strive to be the best and <br> make awesome work."
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius enim, accusantium repellat ex autem numquam iure officiis facere vitae itaque.
@@ -56,19 +56,9 @@ about:
 
 ################################ feature #####################################
 features:
-  enable : true
+  enable : false
   title : "We are indepented Design & Development Agency"
   feature_item:
-  # feature item loop
-  - icon : "fab fa-app-store-ios" #https://fontawesome.com/v5.15/icons
-    name : "IOS App Development"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-  # feature item loop
-  - icon : "fas fa-unlock" #https://fontawesome.com/v5.15/icons
-    name : "App Secutity"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
   # feature item loop
   - icon : "fas fa-gamepad" #https://fontawesome.com/v5.15/icons
     name : "Games Development"
@@ -79,20 +69,9 @@ features:
     name : "Animation and Editing"
     content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
 
-  # feature item loop
-  - icon : "fas fa-lightbulb" #https://fontawesome.com/v5.15/icons
-    name : "UI/UX Design"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-  # feature item loop
-  - icon : "fas fa-star-of-life" #https://fontawesome.com/v5.15/icons
-    name : "Branding"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-
 #################################### testimonial & mission vision #######################################
 testimonial:
-  enable : true
+  enable : false
   # testimonial content comes from "data/*/homepage.yml" file
 
 mission_vision:

@@ -45,10 +45,10 @@ sections:
   templates:
   - author
 - type: heading
-  label: Project
+  label: Projects
 - type: directory
   path: exampleSite/content/english/project
-  label: Project (en)
+  label: Projects (en)
   create: documents
   match: "**/*"
   templates:

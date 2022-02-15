@@ -12,7 +12,8 @@
 .bg-2 {
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  height: 380px;
+  max-height: 380px;
 
   @include large-desktop {
     background-attachment: unset;

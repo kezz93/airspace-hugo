@@ -54,10 +54,13 @@
 <!-- portfolio -->
 {{ with .Params.portfolio }}
 {{ if .enable }}
-<section class="feature bg-2" style="background-image: url('{{ .bg_image | relURL }}')">
+<section class="feature">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-6">
+      <div class="col-md-6">
+        <div class="bg-2" style="background-image: url('{{ .bg_image | relURL }}');"></div>
+      </div>
+      <div class="col-md-6">
         {{ with .title }}<h2 class="section-subtitle">{{ . | markdownify }}</h2>{{ end }}
         {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
         {{ with .button }}
@@ -88,47 +91,7 @@
 <!-- funfacts -->
 {{ with .Params.funfacts }}
 {{ if .enable }}
-<section class="testimonial">
-  <div class="container">
-    <div class="row">
-      <div class="section-title text-center">
-        {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
-        {{ with .description }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="block">
-          <ul class="counter-box clearfix">
-            {{ range .funfact_item }}
-            <li class="counter-item">
-              <i class="{{ .icon }}"></i>
-              <h4 class="count" data-count="{{ .count }}">0</h4>
-              <span>{{ .name | markdownify }}</span>
-            </li>
-            {{ end }}
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-5 col-md-offset-1">
-        <div class="testimonial-carousel text-center">
-          <div class="testimonial-slider owl-carousel">
-            {{ range .testimonial_slider }}
-            <div>
-              <i class="fas fa-quote-left"></i>
-              {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-              <div class="user">
-                <img src="{{ .image | relURL }}" alt="client">
-                <p><span>{{ .name | markdownify }}</span> {{ .designation | markdownify }}</p>
-              </div>
-            </div>
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 {{ end }}
 {{ end }}
 <!-- /funfacts -->
