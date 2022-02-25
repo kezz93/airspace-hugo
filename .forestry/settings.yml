@@ -55,7 +55,7 @@ sections:
   - project
 - type: directory
   path: exampleSite/content/french/project
-  label: Project (fr)
+  label: Projects (fr)
   create: documents
   match: "**/*"
   templates:

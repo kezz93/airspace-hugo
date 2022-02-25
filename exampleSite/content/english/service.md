@@ -1,6 +1,6 @@
 ---
 title: "Our Services"
-description: "this is meta description"
+# description: "this is meta description"
 bg_image: "images/feature-bg.jpg"
 layout: "service"
 draft: false
@@ -47,7 +47,7 @@ featured_service:
 service:
   enable : true
   #title : "Our Services"
-  description : "We build your dream home through the following process"
+  # description : "We build your dream home through the following process"
   service_item:
     # service item loop
     - icon : fas fa-bullseye #https://fontawesome.com/v5.15/icons
