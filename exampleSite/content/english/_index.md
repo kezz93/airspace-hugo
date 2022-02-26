@@ -17,13 +17,13 @@ about:
   title: "About Us"
   description: "Established in 2012, IZ Homes is a family-owned business and a niche builder for residential homes."
   content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id."
-  image: "images/wrapper-img.jpg"
+  image: "images/milad-12.jpg"
 
 
 ######################### Portfolio ###############################
 portfolio:
   enable: true
-  bg_image: "images/feature-bg.jpg"
+  bg_image: "images/milad-3.jpg"
   title: "WE BELIEVE IN GREAT IDEAS"
   content: " Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 
@@ -43,6 +43,30 @@ portfolio:
 service:
   enable: true
   # service content comes from "service.md" file
+
+########################## process ############################
+process:
+  enable : true
+  title: "Our Process"
+  process_item:
+    # service item loop
+    - icon : fas fa-pencil-ruler #https://fontawesome.com/v5.15/icons
+      name: Design
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+
+    - icon : fab fa-slideshare #https://fontawesome.com/v5.15/icons
+      name: Propose
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+
+    # service item loop
+    - icon : fas fa-hammer #https://fontawesome.com/v5.15/icons
+      name: Build
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+
+    # service item loop
+    - icon : fas fa-home #https://fontawesome.com/v5.15/icons
+      name: Live
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
 
 
 ############################ call to action ###########################

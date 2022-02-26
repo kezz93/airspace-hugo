@@ -20,9 +20,12 @@ about:
   image : "images/company/company-group-pic.jpg"
 
 
-########################## featured service ############################
-featured_service:
-  enable : false
+
+############################# Service ###############################
+service:
+  enable : true
+  #title : "Our Services"
+  # description : "We build your dream home through the following process"
   service_item:
     # featured service item loop
     - name : "Interface Design"
@@ -42,32 +45,6 @@ featured_service:
       color : "primary-darker"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus."
 
-
-############################# Service ###############################
-service:
-  enable : true
-  #title : "Our Services"
-  # description : "We build your dream home through the following process"
-  service_item:
-    # service item loop
-    - icon : fas fa-bullseye #https://fontawesome.com/v5.15/icons
-      name: Branding
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-    # service item loop
-    - icon : fas fa-layer-group #https://fontawesome.com/v5.15/icons
-      name: Web Design
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-    # service item loop
-    - icon : fas fa-image #https://fontawesome.com/v5.15/icons
-      name: App Design
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-    # service item loop
-    - icon : fas fa-bug #https://fontawesome.com/v5.15/icons
-      name: Start Up
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
 
 ############################# call to action #################################
 cta:
