@@ -28,22 +28,21 @@ service:
   # description : "We build your dream home through the following process"
   service_item:
     # featured service item loop
-    - name : "Interface Design"
-      icon : "fas fa-flask"
+    - name : "New Homes"
+      icon : "fas fa-house"
       color : "primary"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus."
+      content : "We will build your dream custom home, Spec home or Multiplex using your drawings or designs made by our highly recognized team of architects and designers."
 
     # featured service item loop
-    - name : "Product Branding"
-      icon : "fas fa-leaf"
-      color : "primary-dark"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus."
-
-    # featured service item loop
-    - name : "Game Development"
-      icon : "fas fa-lightbulb"
+    - name : "Subdivision and Development"
+      icon : "fas fa-compass-drafting"
       color : "primary-darker"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus."
+      content : "We focus on providing professional advice and efficient plans to process subdivision and development permits while maximizing on project outcomes."
+
+    - name : "Permit Issuance"
+      icon : "fas fa-certificate"
+      color : "primary-darker"
+      content : "We act as your agent for all municipal interactions to allow for smooth issuance of permits without compromising client requirements."
 
 
 ############################# call to action #################################

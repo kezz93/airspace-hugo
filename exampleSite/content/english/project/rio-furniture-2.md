@@ -1,10 +1,10 @@
 ---
-title: "Rio Furniture"
-description: "this is meta description"
+title: "Rio Furniture 2"
+description: "this is smeta description"
 draft: false
-image : "images/portfolio/work2.jpg"
+image : "images/portfolio/work1.jpg"
 bg_image: "images/feature-bg.jpg"
-category: "Illustration"
+category: [ "Projects" ]
 information:
   - label : "Client"
     info : "Jannie Kelonsky"

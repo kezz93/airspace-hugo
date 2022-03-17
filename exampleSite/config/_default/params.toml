@@ -8,6 +8,8 @@ logo = "images/logo.png"
 logo_width = "150px"
 # logo text will only show when logo is missing.
 logo_text = "Airspace"
+#TODO: Disable if want to add separate projects and not just static pictures
+projects_static_photos = true
 # navbar fixed to top
 navbar_fixed = false
 # OpenGraph / Twitter Card metadata
@@ -17,8 +19,8 @@ image = "images/logo.png" # this image will be used as fallback if a page has no
 # Whether to display text descriptors (like "E-mail: ", "Phone: ") before the address block elements
 address_descriptors = false
 # contact info
-phone = "0124857985320"
-email = "kamalezz93@gmail.com"
+phone = "778-861-3989"
+email = "izhomescanada@gmail.com"
 location = """
 **IZ Homes**
 
@@ -29,7 +31,7 @@ Pitt Meadows, BC
 V3Y 1Z1
 """
 
-# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
+# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script= ""
 # google tag manager, see https://developers.google.com/tag-manager/
 google_tag_manager = "" # example: G-XXXXXXXXXX
@@ -44,7 +46,7 @@ use_netlify = true
 use_recaptcha = false
 # Form action
 ## Fill in your Form ID URL for Formspree.io, e.g. `https://formspree.io/f/{form_id}`
-## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included) 
+## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included)
 action = "#"
 # Image on custom success page `/message_sent.html`
 success_image = "images/paper-plane.svg"
