@@ -93,10 +93,10 @@ baidu = "" # Your verification code
 
 # google map
 [gmap]
-enable = true
+enable = false
 gmap_api = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
+map_latitude = "49.27791197933075"
+map_longitude = "-122.68696800221831"
 map_marker = "images/marker.png"
 
 # cookies

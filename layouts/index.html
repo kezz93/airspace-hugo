@@ -33,10 +33,10 @@
       <div class="col-md-6 col-sm-12">
         <div class="block">
           <div class="section-title">
-            {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+            {{ with .title }}<h2 class="no-padding-top">{{ . | markdownify }}</h2>{{ end }}
             {{ with .description }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
           </div>
-          {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
+          {{ with .content }}<div class="section-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
@@ -58,8 +58,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-sm-push-6">
-        {{ with .title }}<h2 class="section-subtitle">{{ . | markdownify }}</h2>{{ end }}
-        {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
+        {{ with .title }}<h2 class="section-subtitle no-padding-top">{{ . | markdownify }}</h2>{{ end }}
+
+        {{ with .content }}<div class="section-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
         {{ with .button }}
         {{ if .enable }}
         <a href="{{ .link | relLangURL }}" class="btn btn-view-works">{{ .label }}</a>

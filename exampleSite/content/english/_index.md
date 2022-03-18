@@ -24,15 +24,10 @@ about:
 portfolio:
   enable: true
   bg_image: "images/milad-3.jpg"
-  title: "WE BELIEVE IN GREAT IDEAS"
-  content: " Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-
-  Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-
-  Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-  "
+  title: "WE BELIEVE IN DREAM HOMES"
+  content: "By putting our customers requirements as number one priority, we are constantly striving to translate your unique tastes and aspirations into your dream home. By taking away all the headache and municipal legal communications, we make the experience a stress-free delightful one. 
+            We believe clients should not be compromising, therefore pushing to get them the home they dream of is our goal."
+            
   button:
     enable: true
     label: "View Works"
@@ -52,21 +47,21 @@ process:
     # service item loop
     - icon : fas fa-pencil-ruler #https://fontawesome.com/v5.15/icons
       name: Design
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+      content: "Designs are made by architects and designers or provided by client"
 
     - icon : fab fa-slideshare #https://fontawesome.com/v5.15/icons
       name: Propose
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+      content: "Detailed proposals are generated and discussed with the client"
 
     # service item loop
     - icon : fas fa-hammer #https://fontawesome.com/v5.15/icons
       name: Build
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+      content: "Implementation and building start once municipal permits are granted"
 
     # service item loop
     - icon : fas fa-home #https://fontawesome.com/v5.15/icons
       name: Deliver
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+      content: "Keys are delivered upon the full satisfaction of the client"
 
 
 ############################ call to action ###########################
@@ -74,7 +69,7 @@ cta:
   enable: true
   bg_image: "images/call-to-action-bg.jpg"
   title: "We design and build delightful homes."
-  content: "Read more about what we do and our philosophy of design. Judge for yourself the work and results <br> we’ve achieved through our projects, and reach out to our highly experienced team who would <br> love to help you design and build your next home."
+  content: "Read more about what we do and our approach of building homes. Judge for yourself the work and results <br> we’ve achieved throughout our previous projects, and reach out to our highly experienced team who would <br> love to help you design and build your next home."
   button:
     enable: true
     label: "Contact us"
