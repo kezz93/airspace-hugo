@@ -1,7 +1,7 @@
 ---
 title: "About IZ Homes"
 # description: "this is meta description"
-bg_image: "images/feature-bg.jpg"
+bg_image: "images/banner.jpg"
 layout: "about"
 draft: false
 

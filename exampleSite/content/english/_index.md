@@ -2,7 +2,7 @@
 ############################### Banner ##############################
 banner:
   enable: true
-  bg_image: "images/pexels-binyamin-mellish-186077.jpg"
+  bg_image: "images/homepage-banner.jpg"
   bg_overlay: true
   title: "IZ Homes"
   content: "DELIVERING THE DREAM OF HOME OWNERSHIP"
@@ -67,7 +67,7 @@ process:
 ############################ call to action ###########################
 cta:
   enable: true
-  bg_image: "images/call-to-action-bg.jpg"
+  bg_image: "images/garden.jpg"
   title: "We design and build delightful homes."
   content: "Read more about what we do and our approach of building homes. Judge for yourself the work and results <br> we’ve achieved throughout our previous projects, and reach out to our highly experienced team who would <br> love to help you design and build your next home."
   button:

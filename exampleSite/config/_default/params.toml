@@ -7,11 +7,11 @@ logo = "images/logo.png"
 # Note: logo_width is not work with .svg file
 logo_width = "150px"
 # logo text will only show when logo is missing.
-logo_text = "Airspace"
+logo_text = "IZ Homes"
 #TODO: Disable if want to add separate projects and not just static pictures
 projects_static_photos = true
 # navbar fixed to top
-navbar_fixed = false
+navbar_fixed = true
 # OpenGraph / Twitter Card metadata
 description = "This is meta description"
 author = "KamalEzz"

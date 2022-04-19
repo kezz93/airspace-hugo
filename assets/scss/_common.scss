@@ -641,11 +641,11 @@ input[type="tel"] {
 }
 
 .sticky-top {
+  background-color: white;
+  z-index: 1;
   position: sticky;
   top: 0;
-  @include desktop {
-    position: static;
-  }
+  border-bottom: 1px solid #eee;
 }
 
 
