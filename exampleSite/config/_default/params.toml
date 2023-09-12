@@ -7,31 +7,27 @@ logo = "images/logo.png"
 # Note: logo_width is not work with .svg file
 logo_width = "150px"
 # logo text will only show when logo is missing.
-logo_text = "IZ Homes"
-#TODO: Disable if want to add separate projects and not just static pictures
-projects_static_photos = true
+logo_text = "Airspace"
 # navbar fixed to top
-navbar_fixed = true
+navbar_fixed = false
 # OpenGraph / Twitter Card metadata
 description = "This is meta description"
-author = "KamalEzz"
+author = "Themefisher"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 # Whether to display text descriptors (like "E-mail: ", "Phone: ") before the address block elements
 address_descriptors = false
 # contact info
-phone = "778-861-3989"
-email = "izhomescanada@gmail.com"
+phone = "0124857985320"
+email = "demo@email.com"
 location = """
-**IZ Homes**
-
-15146 Harris Road
-
-Pitt Meadows, BC
-
-V3Y 1Z1
+**Themefisher**  
+North Main Street  
+Brooklyn, New South Wales  
+Australia
 """
-
-# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
+# copyright
+copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"
+# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
 custom_script= ""
 # google tag manager, see https://developers.google.com/tag-manager/
 google_tag_manager = "" # example: G-XXXXXXXXXX
@@ -43,10 +39,10 @@ enable = true
 # Whether to use [Netlify Forms](https://docs.netlify.com/forms/setup/)
 use_netlify = true
 # Whether to use recaptch v3 in form
-use_recaptcha = false
+use_recaptcha = true
 # Form action
 ## Fill in your Form ID URL for Formspree.io, e.g. `https://formspree.io/f/{form_id}`
-## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included)
+## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included) 
 action = "#"
 # Image on custom success page `/message_sent.html`
 success_image = "images/paper-plane.svg"
@@ -83,7 +79,8 @@ domain = "" # yourdomain.com
 # counter analytics: see https://counter.dev/setup.html
 [counter]
 enable = false
-username = "" # your username
+id = "" # your site's counter.dev ID (`data-id` attribute value)
+utc_offset = 0 # UTC time offset (`data-utcoffset` attribute value)
 
 # site verifications
 [site_verification]
@@ -93,10 +90,10 @@ baidu = "" # Your verification code
 
 # google map
 [gmap]
-enable = false
+enable = true
 gmap_api = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
-map_latitude = "49.27791197933075"
-map_longitude = "-122.68696800221831"
+map_latitude = "51.5223477"
+map_longitude = "-0.1622023"
 map_marker = "images/marker.png"
 
 # cookies
@@ -112,17 +109,27 @@ sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
 # available widget : categories,tags,recent-post
 
 ############################# social site ########################
-#[[social]]
-#title = "facebook"
-#icon = "fab fa-facebook"  # fontawesome icon pack : https://fontawesome.com/icons/
-#link = "#"
+[[social]]
+title = "facebook"
+icon = "fab fa-facebook"  # fontawesome icon pack : https://fontawesome.com/icons/
+link = "#"
 
-#[[social]]
-#title = "twitter"
-#icon = "fab fa-twitter"  # fontawesome icon pack : https://fontawesome.com/icons/
-#link = "#"
+[[social]]
+title = "twitter"
+icon = "fab fa-twitter"  # fontawesome icon pack : https://fontawesome.com/icons/
+link = "#"
 
-#[[social]]
-#title = "instagram"
-#icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
-#link = "#"
+[[social]]
+title = "instagram"
+icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "#"
+
+[[social]]
+title = "github"
+icon = "fab fa-github" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "#"
+
+[[social]]
+title = "linkedin"
+icon = "fab fa-linkedin" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "#"

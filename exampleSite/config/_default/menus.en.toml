@@ -12,19 +12,43 @@ url = "about/"
 weight = 2
 
 [[main]]
-  name = "Services"
-  url = "service/"
-  weight = 3
+name = "Project"
+url = "project/"
+weight = 3
 
 [[main]]
-name = "Projects"
-url = "project/"
+name = "Blog"
+url = "blog/"
 weight = 4
 
+[[main]]
+weight = 5
+name = "More"
+hasChildren = true
+
+  [[main]]
+  parent = "More"
+  name = "Service"
+  url = "service/"
+  weight = 1
+
+  [[main]]
+  parent = "More"
+  name = "Pricing"
+  url = "pricing/"
+  weight = 2
+
+  [[main]]
+  parent = "More"
+  name = "FAQ"
+  url = "faq/"
+  weight = 3
+  
 [[main]]
 name = "Contact"
 url = "contact/"
 weight = 6
+
 
 # footer menu
 [[footer]]
@@ -33,16 +57,26 @@ url = "about/"
 weight = 2
 
 [[footer]]
-name = "Services"
-url = "service/"
+name = "Project"
+url = "project/"
 weight = 3
 
 [[footer]]
-name = "Projects"
-url = "project/"
+name = "Service"
+url = "service/"
 weight = 4
+
+[[footer]]
+name = "Pricing"
+url = "pricing/"
+weight = 5
+
+[[footer]]
+name = "FAQ"
+url = "faq/"
+weight = 6
 
 [[footer]]
 name = "Contact"
 url = "contact/"
-weight = 5
+weight = 7

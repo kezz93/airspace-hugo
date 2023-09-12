@@ -1,5 +1,5 @@
 .feature {
-  background: url("../img/banner.jpg");
+  background: url("../img/feature-bg.jpg");
   background-position: 50% 94px;
   display: block;
   position: relative;
@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 50px 0;
+  padding: 100px 0;
 
   @include large-desktop {
     padding-top: 20px;

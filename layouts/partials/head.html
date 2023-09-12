@@ -2,17 +2,17 @@
 <title>{{.Title | default site.Title}}</title>
 
 <!-- base url -->
-{{ if or (eq site.BaseURL "/") (eq site.BaseURL "http://izhomes.ca/") (eq site.BaseURL "http://examplesite.org/") (eq site.BaseURL "https://examplesite.org/") (eq site.BaseURL "http://examplesite.com/") (eq site.BaseURL "https://examplesite.com/")}}{{else}}
+{{ if or (eq site.BaseURL "/") (eq site.BaseURL "http://localhost:1313/") (eq site.BaseURL "http://examplesite.org/") (eq site.BaseURL "https://examplesite.org/") (eq site.BaseURL "http://examplesite.com/") (eq site.BaseURL "https://examplesite.com/")}}{{else}}
 <base href="{{ .Permalink }}">
 {{ end }}
 
-<!-- multilingual SEO optimizations
+<!-- multilingual SEO optimizations -->
 {{ if .IsTranslated }}
 {{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{.Lang}}" href="{{ .RelPermalink | absLangURL }}">
 {{ end }}
 <link rel="alternate" hreflang="x-default" href="{{ .RelPermalink | absLangURL }}">
-{{ end }} -->
+{{ end }}
 
 <!-- mobile responsive meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -20,6 +20,12 @@
 {{ with site.Params.author }}
 <meta name="author" content="{{ . }}">{{ end }}
 {{ hugo.Generator }}
+  
+<!-- theme meta -->
+<meta name="theme-name" content="airspace-hugo" />
+
+<!-- theme meta -->
+<meta name="theme-name" content="airspace-hugo" />
 
 <!-- google site verification -->
 {{ with site.Params.site_verification.google }}
@@ -157,19 +163,19 @@
 {{ end }}
 
 <!-- Plausible Analytics -->
-{{ if site.Params.plausible.enable }}
-{{ with site.Params.plausible.domain }}
+{{ with site.Params.plausible }}
+{{ if .enable }}
+{{ with .domain }}
 <script defer data-domain="{{ . }}" src="https://plausible.io/js/plausible.js"></script>
+{{ end }}
 {{ end }}
 {{ end }}
 
 <!-- Counter Analytics -->
 {{ with site.Params.counter }}
 {{ if .enable }}
-{{ with .username }}
-<script>
-  if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"{{ . }}",utcoffset:"0"}))};sessionStorage.setItem("_swa","1");
-</script>
+{{ with .id }}
+<script src="https://cdn.counter.dev/script.js" data-id="{{ . }}" data-utcoffset="{{ site.Params.counter.utc_offset | default "0" }}"></script>
 {{ end }}
 {{ end }}
 {{ end }}

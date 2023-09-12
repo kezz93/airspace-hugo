@@ -12,10 +12,10 @@
         <div class="block">
           <div class="portfolio-menu">
             <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
-              <!-- <label class="btn btn-sm btn-primary active">
+              <label class="btn btn-sm btn-primary active">
                 <input type="radio" name="shuffle-filter" value="all" checked="checked">{{ i18n "all" }}
-              </label> -->
-              <!-- {{ $categories := slice -}}
+              </label>
+              {{ $categories := slice -}}
               {{ range .Data.Pages -}}
               {{ $categories = $categories | append .Params.category -}}
               {{ end -}}
@@ -23,7 +23,7 @@
               <label class="btn btn-sm btn-primary">
                 <input type="radio" name="shuffle-filter" value="{{ . | urlize }}">{{ . }}
               </label>
-              {{- end }} -->
+              {{- end }}
             </div>
           </div>
           <div class="row shuffle-wrapper">
@@ -35,14 +35,12 @@
               {{ if isset .Params "image" -}}
               <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
               {{- end }}
-              {{ if not (site.Params.projects_static_photos) -}}
               <div class="portfolio-hover">
                 <div class="portfolio-content">
-                    <a class="h3" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    <p>{{ .Params.description }}</p>
+                  <a class="h3" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  <p>{{ .Params.description }}</p>
                 </div>
               </div>
-              {{- end }}
             </div>
             {{- end }}
           </div>
