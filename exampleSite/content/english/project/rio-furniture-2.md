@@ -1,10 +1,10 @@
 ---
-title: "2021-16"
-description: "this is smeta description"
+title: "Rio Furniture"
+description: "this is meta description"
 draft: false
-image : "images/portfolio/2021/house16.jpg"
-bg_image: "images/banner.jpg"
-category: [ "Projects" ]
+image : "images/portfolio/2021/house2.jpg"
+bg_image: "images/portfolio/2021/house2.jpg"
+category: "Illustration"
 information:
   - label : "Client"
     info : "Jannie Kelonsky"
