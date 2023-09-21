@@ -14,7 +14,6 @@
           padding: 8px 25px;
           cursor: pointer;
           font-size: 15px;
-          color: lighten( $black, 20 );
           outline: 0;
           background: $white;
           margin: 2px;
@@ -25,15 +24,23 @@
     }
   }
 }
-
+.project-img{
+    background-color: black;
+}
 .portfolio {
+
   &-item {
+
     position: relative;
     padding: 0;
+    visibility: visible;
 
     img {
       width: 100%;
       height: auto;
+      visibility: visible;
+      background-color: black;
+      opacity: 0.8;
     }
 
     &:hover {
@@ -44,28 +51,19 @@
 
       .portfolio-content {
         transform: translateY(-50%);
+        visibility: visible;
       }
     }
   }
 
-  &-hover {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(60, 55, 55, 0.5);
-    visibility: hidden;
-    opacity: 0;
-    transition: .3s ease;
-  }
+
 
   &-content {
     position: absolute;
     left: 0;
     right: 0;
     top: 50%;
-    transform: translateY(-40%);
+    transform: translateY(-50%);
     text-align: center;
     padding: 20px;
     transition: inherit;

@@ -26,23 +26,31 @@
               {{- end }} -->
             </div>
           </div>
-          <div class="row shuffle-wrapper">
-            {{ range .Data.Pages -}}
+          <div class="row mb-5 shuffle-wrapper">
+            {{ range sort .Data.Pages "Params.order" -}}
             {{ $cats := .Params.category -}}
             {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}}
             {{ $cats = apply $cats "urlize" "." | jsonify -}}
-            <div class="col-md-4 portfolio-item shuffle-item" data-groups="{{ $cats }}">
-              {{ if isset .Params "image" -}}
-              <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
-              {{- end }}
-              {{ if not (site.Params.projects_static_photos) -}}
-              <div class="portfolio-hover">
-                <div class="portfolio-content">
-                    <a class="h3" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    <p>{{ .Params.description }}</p>
+            <div class="col-md-6 portfolio-item shuffle-item">
+               <a href="{{ .RelPermalink }}">
+              <div class="col-md-11 mt-10 portfolio-item shuffle-item" data-groups="{{ $cats }}">
+                {{ if isset .Params "image" -}}
+                <div class="project-img">
+                  <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
                 </div>
+                {{- end }}
+                {{ if not (site.Params.projects_static_photos) -}}
+
+                  <div class="portfolio-hover">
+                    <div class="portfolio-content">
+                        <p class="h3">{{ .Title }}</p>
+                        <p class="h4">{{ .Params.description }}</p>
+                    </div>
+                  </div>
+
+                {{- end }}
               </div>
-              {{- end }}
+                 </a>
             </div>
             {{- end }}
           </div>
