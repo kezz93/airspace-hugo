@@ -9,7 +9,7 @@ logo_width = "150px"
 # logo text will only show when logo is missing.
 logo_text = "IZ Homes"
 #TODO: Disable if want to add separate projects and not just static pictures
-projects_static_photos = true
+projects_static_photos = false
 # navbar fixed to top
 navbar_fixed = true
 # OpenGraph / Twitter Card metadata

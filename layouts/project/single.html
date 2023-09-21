@@ -6,29 +6,27 @@
 
 <section class="portfolio-single-page section-sm">
   <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        {{ with .Params.image }}
-        <img class="img-responsive w-100" src="{{ . | relURL }}" alt="">
-        {{ end }}
-      </div>
-      <div class="col-md-4">
-        <div class="project-details">
-          <h4>Project Details</h4>
-          <ul>
-            {{ range .Params.information }}
-            <li><span>{{ .label }} :</span> <strong>{{ .info | markdownify }}</strong></li>
+    <div class="row mt-10">
+
+      {{ $imageDir := .Params.project_photos }}
+      {{ $imageCount := 0 }}
+      {{ with readDir (printf "static/%s" $imageDir) }}
+        {{ range . }}
+            {{ $imageCount = add $imageCount 1 }}
+            <div class="col-md-4">
+              <img src="{{ (printf "/%s/%s" $imageDir .Name) | relURL }}" alt="loading" loading="lazy" decoding="async"/>
+            </div>
+            {{ if and (gt $imageCount 0) (eq (mod $imageCount 3) 0) }} <!-- Add a new row after every third image -->
+              </div><div class="row mt-10">
             {{ end }}
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="project-content mt-50">
-          {{ .Content }}
-        </div>
-      </div>
+        {{ end }}
+      {{ end }}
+
+<!--      <div class="col-md-12">-->
+<!--        {{ with .Params.image }}-->
+<!--        <img class="img-responsive w-100" src="{{ . | relURL }}" alt="">-->
+<!--        {{ end }}-->
+<!--      </div>-->
     </div>
   </div>
 </section>

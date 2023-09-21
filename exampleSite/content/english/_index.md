@@ -9,7 +9,7 @@ banner:
   button:
     enable: true
     label: "Discover Our Projects"
-    link: "project"
+    link: "project/"
 
 ############################# About #################################
 about:
